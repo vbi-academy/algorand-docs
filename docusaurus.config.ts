@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import tailwindPlugin from './plugins/tailwind-config.cjs'
 
 const config: Config = {
   title: 'NEAR Document',
@@ -28,6 +29,7 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: [tailwindPlugin],
 
   presets: [
     [
@@ -39,7 +41,6 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/openedu101/near-docs',
-          routeBasePath: '/'
         },
         blog: {
           showReadingTime: true,
@@ -59,9 +60,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'NEAR Document',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'NEAR Document Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -73,7 +74,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/jayden-dang/near-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -87,7 +88,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/',
+              to: '/docs/intro',
             },
           ],
         },
@@ -122,7 +123,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Jayden Đặng - VBI Academy`,
     },
     prism: {
       theme: prismThemes.github,

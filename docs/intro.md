@@ -1,7 +1,5 @@
 ---
 sidebar_position: 1
-id: what-is-near
-slug: /
 ---
 
 # Tutorial Intro
