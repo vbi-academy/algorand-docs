@@ -63,7 +63,7 @@ const config: Config = {
       title: 'NEAR Document',
       logo: {
         alt: 'NEAR Document Logo',
-        src: 'img/logo.svg',
+        src: 'img/img_logo.png',
       },
       items: [
         {
@@ -96,16 +96,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'NEAR Discord',
+              href: 'https://discord.com/invite/uMBFPZKqQD',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Rust Discord',
+              href: 'https://discord.com/invite/pVS5TqKvWM',
             },
           ],
         },
@@ -118,12 +114,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/jayden-dang/near-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Jayden Đặng - VBI Academy`,
+      copyright: `Copyright © ${new Date().getFullYear()} by Jayden Đặng - VBI Academy`,
     },
     prism: {
       theme: prismThemes.github,
