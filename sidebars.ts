@@ -62,7 +62,31 @@ const sidebars: SidebarsConfig = {
         'basic/first-smart-contract/deploy-and-call-on-algorand',
       ],
     },
-
+    {
+      type: 'category',
+      label: 'Basic Smart Contract',
+      items: [
+        'basic/basic-smart-contract/insight-into-algokit',
+        'basic/basic-smart-contract/types', 
+        'basic/basic-smart-contract/control-flow-structures',
+        'basic/basic-smart-contract/module-level-constructs',
+        'basic/basic-smart-contract/python-builtins',
+        'basic/basic-smart-contract/error-handling-assertions',
+        'basic/basic-smart-contract/storing-data-on-chain',
+        'basic/basic-smart-contract/transactions',
+      ],
+    },
+    {
+      type: 'doc',
+      id: 'basic/algorand-cli',
+    },
+    {
+      type: 'category',
+      label: 'Counter Smart Contract',
+      items: [
+        "basic/counter-contract/counter-contract-overview"
+      ]
+    }
   ],
   advancedSidebar: [
     'advanced/advanced'
