@@ -95,28 +95,28 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.com/invite/uMBFPZKqQD',
-            }
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/jayden-dang/algorand-docs',
-            },
-          ],
-        },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discord.com/invite/uMBFPZKqQD',
+        //     }
+        //   ],
+        // },
+        // {
+        //   title: 'More',
+        //   items: [
+        //     {
+        //       label: 'Blog',
+        //       to: '/blog',
+        //     },
+        //     {
+        //       label: 'GitHub',
+        //       href: 'https://github.com/jayden-dang/algorand-docs',
+        //     },
+        //   ],
+        // },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} by <a target="_blank" href="https://facebook.com/jayden-dang">Jayden Đặng</a> - <a href="https://openedu101.com" target="_blank">OpenEdu101</a>`,
     },
