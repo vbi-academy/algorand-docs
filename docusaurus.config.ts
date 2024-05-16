@@ -4,12 +4,12 @@ import type * as Preset from '@docusaurus/preset-classic';
 import tailwindPlugin from './plugins/tailwind-config.cjs'
 
 const config: Config = {
-  title: 'NEAR Document',
-  tagline: 'NEAR Bootcamp 2024 - Documents',
+  title: 'Algorand ',
+  tagline: 'Algorand Bootcamp 2024',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://near-docs.openedu101.com',
+  url: 'https://algorand-docs.openedu101.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -17,17 +17,14 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'openedu101', // Usually your GitHub org/user name.
-  projectName: 'near-docs', // Usually your repo name.
+  projectName: 'algorand-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'vi',
+    locales: ['vi', 'en'],
   },
   plugins: [tailwindPlugin],
 
@@ -37,17 +34,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/openedu101/near-docs',
+          editUrl: 'https://github.com/openedu101/algorand-docs',
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/openedu101/near-docs',
+          editUrl: 'https://github.com/openedu101/algorand-docs',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -59,22 +51,42 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    announcementBar: {
+      id: 'id-0002',
+
+      content:
+        '🎉 Come check <a href="/blog">our new blog</a> or <a href="https://openedu101.com" target="_blank">our new courses</a>, where we will share weekly news and updates 🎉',
+      backgroundColor: '#fafbfc',
+      textColor: '#091E42',
+      isCloseable: true,
+    },
     navbar: {
-      title: 'NEAR Document',
+      title: 'Algorand',
       logo: {
-        alt: 'NEAR Document Logo',
+        alt: 'OpenEdu101 Logo',
         src: 'img/img_logo.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'basicSidebar',
           position: 'left',
-          label: 'Document',
+          label: 'Basic',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/jayden-dang/near-docs',
+          type: 'docSidebar',
+          sidebarId: 'advancedSidebar',
+          label: 'Advanced',
+          position: 'left'
+        },
+        {
+          href: 'https://openedu101.com',
+          label: 'Algorand Course',
+          position: 'left',
+        },
+        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://github.com/jayden-dang/algorand-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -84,25 +96,12 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Document',
-              to: '/docs/category/introduction-near',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
-              label: 'NEAR Discord',
+              label: 'Discord',
               href: 'https://discord.com/invite/uMBFPZKqQD',
-            },
-            {
-              label: 'Rust Discord',
-              href: 'https://discord.com/invite/pVS5TqKvWM',
-            },
+            }
           ],
         },
         {
@@ -114,12 +113,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/jayden-dang/near-docs',
+              href: 'https://github.com/jayden-dang/algorand-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} by Jayden Đặng - VBI Academy`,
+      copyright: `Copyright © ${new Date().getFullYear()} by <a target="_blank" href="https://facebook.com/jayden-dang">Jayden Đặng</a> - <a href="https://openedu101.com" target="_blank">OpenEdu101</a>`,
     },
     prism: {
       theme: prismThemes.github,
