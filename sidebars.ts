@@ -57,8 +57,12 @@ const sidebars: SidebarsConfig = {
       label: 'First Your Smart Contract',
       items: [
         'basic/first-smart-contract/smart-contract-structure-python',
+        'basic/first-smart-contract/assets',
+        'basic/first-smart-contract/capabilites',
+        'basic/first-smart-contract/deploy-and-call-on-algorand',
       ],
     },
+
   ],
   advancedSidebar: [
     'advanced/advanced'
