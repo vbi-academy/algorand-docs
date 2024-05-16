@@ -118,7 +118,7 @@ const config: Config = {
         //   ],
         // },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} by <a target="_blank" href="https://facebook.com/jayden-dang">Jayden Đặng</a> - <a href="https://openedu101.com" target="_blank">OpenEdu101</a>`,
+      copyright: `Copyright © ${new Date().getFullYear()} by <a target="_blank" href="https://twitter.com/jayden_dangvu">Jayden Đặng</a> - <a href="https://openedu101.com" target="_blank">OpenEdu101</a>`,
     },
     prism: {
       theme: prismThemes.github,
