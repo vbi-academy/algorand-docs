@@ -67,7 +67,7 @@ const sidebars: SidebarsConfig = {
       label: 'Basic Smart Contract',
       items: [
         'basic/basic-smart-contract/insight-into-algokit',
-        'basic/basic-smart-contract/types', 
+        'basic/basic-smart-contract/types',
         'basic/basic-smart-contract/control-flow-structures',
         'basic/basic-smart-contract/module-level-constructs',
         'basic/basic-smart-contract/python-builtins',
@@ -86,7 +86,59 @@ const sidebars: SidebarsConfig = {
       items: [
         "basic/counter-contract/counter-contract-overview"
       ]
-    }
+    },
+    {
+      type: 'category',
+      label: 'Python SDKs',
+      items: [
+        "basic/python-sdk/introduction-python-sdks",
+        "basic/python-sdk/generate-accounts",
+        "basic/python-sdk/atomic-transfer",
+        "basic/python-sdk/state-access-manipulation",
+        "basic/python-sdk/opcode-budgets",
+        "basic/python-sdk/avm-operations",
+        "basic/python-sdk/local-global-storage",
+      ]
+    },
+    {
+      type: 'doc',
+      id: "basic/defi-smart-contract"
+    },
+    {
+      type: 'category',
+      label: 'Auction Decentralized Application',
+      items: [
+        {
+          type: 'category',
+          label: 'Auction Smart Contract Walkthrough',
+          items: [
+            {
+              type: 'doc',
+              id: 'basic/auction-dapp/smart-contract/setup-auction-contract'
+            },
+            'basic/auction-dapp/smart-contract/state',
+            'basic/auction-dapp/smart-contract/create',
+            'basic/auction-dapp/smart-contract/opt-in',
+            'basic/auction-dapp/smart-contract/start-auction',
+            'basic/auction-dapp/smart-contract/pay-bid',
+            'basic/auction-dapp/smart-contract/claim-bid-asset',
+            'basic/auction-dapp/smart-contract/delete'
+          ]
+        },
+        "basic/auction-dapp/unit-test-auction-contract",
+        {
+          type: 'category',
+          label: "Intergration on Front-End",
+          items: [
+            "basic/auction-dapp/intergration-front-end/introduction",
+            "basic/auction-dapp/intergration-front-end/myalgo",
+            "basic/auction-dapp/intergration-front-end/algosigner-intergration",
+            "basic/auction-dapp/intergration-front-end/pera-wallet-intergration",
+          ]
+        }
+      ]
+    },
+    "basic/staking-dapp/staking-dapp"
   ],
   advancedSidebar: [
     'advanced/advanced'
