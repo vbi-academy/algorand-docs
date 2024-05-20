@@ -13,7 +13,6 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   basicSidebar: [
-    'basic/what-is-blockchain-and-it-benefits',
     {
       type: 'category',
       label: 'Introduction Algorand',
