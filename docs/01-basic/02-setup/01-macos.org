@@ -1,0 +1,56 @@
+* MacOs
+** Prerequisites
+- [[https://www.python.org/downloads/][Python 3.12]]
+- [[https://pypa.github.io/pipx/#on-linux-install-via-pip-requires-pip-190-or-later][PipX]]
+- [[https://github.com/git-guides/install-git#install-git][Git]]
+- [[https://docker.com/download/][Docker]]
+- [[https://code.visualstudio.com/download][VS Code]] - Khuyên Dùng
+- [[https://docs.brew.sh/Installation][Homebrew]]
+
+* Install
+** Install Homebrew
+#+begin_src sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#+end_src
+
+** Git
+- Check Git
+#+begin_src sh :results output :session share :async true
+git --help
+#+end_src
+
+- Cài đặt nếu không tồn tại
+#+begin_src sh
+brew install git
+#+end_src
+
+** Docker
+#+begin_src sh
+brew install --cask docker
+#+end_src
+
+** Install AlgoKit
+*** Method 1
+#+begin_src sh
+brew install algorandfoundation/tap/algokit
+#+end_src
+
+- Check
+#+begin_src sh :results output
+algokit --version
+#+end_src
+
++ Kết quả trả về nếu đã cài đặt thành công
+: algokit, version 2.1.0
+
+*** Method 2
+#+begin_src sh :results output
+pipx install algokit
+#+end_src
+
+* Run Localnet
++ Mở ứng dụng Docker
++ Run CLI:
+  #+begin_src sh
+algokit localnet start
+  #+end_src

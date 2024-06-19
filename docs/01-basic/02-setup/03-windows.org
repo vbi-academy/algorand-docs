@@ -1,0 +1,22 @@
+  - [[#yêu-cầu][Yêu cầu]]
+  - [[#cài-đặt-python3-sử-dụng-winget][Cài đặt Python3 sử dụng WinGet]]
+
+** Yêu cầu
++ [[https://github.com/git-guides/install-git#install-git-on-windows][Git]] (or winget install git.git)
++ [[https://docs.docker.com/desktop/install/windows-install/][Docker]] (or winget install docker.dockerdesktop)
+** Cài đặt Python3 sử dụng WinGet
++ Cài đặt Python: =winget install python.python.3.12=
++ Cài đặt pipx
+  #+begin_src sh :results output
+pip install --user pipx
+python -m pipx ensurepath
+  #+end_src
++ Cài đặt algokit
+#+begin_src sh :results output
+pipx install algokit
+#+end_src
+
+** Start a LocalNet
+#+begin_src sh :results output
+algokit localnet start
+#+end_src
