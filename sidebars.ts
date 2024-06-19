@@ -14,6 +14,10 @@ const sidebars: SidebarsConfig = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   basicSidebar: [
     {
+      type: 'doc',
+      id: 'basic/blockchain-it-benefits',
+    },
+    {
       type: 'category',
       label: 'Introduction Algorand',
       items: [
@@ -137,10 +141,13 @@ const sidebars: SidebarsConfig = {
         }
       ]
     },
-    "basic/staking-dapp/staking-dapp"
+    "basic/staking-dapp/staking-dapp",
   ],
   advancedSidebar: [
     'advanced/advanced'
+  ],
+  aboutInstructor: [
+    'about-instructor'
   ],
 };
 

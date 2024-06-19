@@ -1,0 +1,14 @@
+* Table of Content :toc:
+- [[#our-founder][Our Founder]]
+- [[#algorand---algorithm--randomization][Algorand - Algorithm + Randomization]]
+
+* Our Founder
++ [[https://en.wikipedia.org/wiki/Silvio_Micali][Silvio Micali]]
+  + *Silvio Micali* Born October 13, 1954 - is an Italian computer scientist, professor at the Massachusetts Institute of Technology and the founder of Algorand, a proof-of-stake blockchain cryptocurrency protocol. Micali's research at the MIT Computer Science and Artificial Intelligence Laboratory centers on cryptography and information security.
+  + In 2012, he received the *Turing Award* for his work in cryptography
+  + Co-inventor of Zero-Knowledge Proofs, *VRF ( Verifiable Random Functions )*, and a world-renowned leader in the field of cryptography and information security
+* Algorand - Algorithm + Randomization
++ Fast: Finality Block ~ 3.5s
++ Secure: PPoS Consensus
++ Tx: Upto 10.000tx/s
++ Scalable: 10M tx/s

@@ -84,7 +84,13 @@ const config: Config = {
           label: 'Algorand Course',
           position: 'left',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docSidebar',
+          sidebarId: 'aboutInstructor',
+          label: 'About Instructor',
+          position: 'left'
+        },
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/jayden-dang/algorand-docs',
           label: 'GitHub',

@@ -1,0 +1,12 @@
+#+TITLE: About Me
+#+AUTHOR: Dang Quang Vu
+#+EMAIL: jayden.dangvu@gmail.com
+
+** About Instructor
++ Dang Quang Vu - Jayden
++ 7+ years working with Web3 Domain ( EVM, NEAR, Solana, Polkadot, SUI, Algorand, ... )
++ Blockchain Technical Lead GFI Ventures
++ Head of Faculty VBI Academy
++ [[https://www.linkedin.com/in/jayden-dangvu/][Linkedin]]
+
+[[../images/jd.png]]
