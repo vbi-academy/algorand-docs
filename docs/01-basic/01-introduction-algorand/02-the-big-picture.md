@@ -1,23 +1,14 @@
 ---
-id: the-big-picture
+Author: Dang Quang Vu
 title: The Big Picture
 ---
 
--   [The Big Picture of Algorand](#the-big-picture-of-algorand)
 -   [Pure Proof-of-Stake (PPoS)](#pure-proof-of-stake-ppos)
 -   [Algorand Standard Assets (ASA)](#algorand-standard-assets-asa)
 -   [Atomic Transfers](#atomic-transfers)
 -   [Boxes](#boxes)
 
-# The Big Picture of Algorand
-
-Algorand is a blockchain platform that aims to deliver high performance,
-security, and decentralization. It was founded by Turing Award winner
-Silvio Micali. Here are the key technological features that make
-Algorand unique:
-
-# Pure Proof-of-Stake (PPoS)
-
+## Pure Proof-of-Stake (PPoS)
 -   Algorand sử dụng cơ chế đồng thuận Pure Proof-of-Stake (PPoS), cho
     phép đồng thuận nhanh chóng và hiệu quả mà không cần đào tiền tốn
     năng lượng. Trong PPoS:
@@ -29,8 +20,7 @@ Algorand unique:
     -   Security: Quá trình lựa chọn ngẫu nhiên giúp chống lại các cuộc
         tấn công, vì người xác thực tiếp theo không thể đoán biết trước.
 
-# Algorand Standard Assets (ASA)
-
+## Algorand Standard Assets (ASA)
 -   Algorand cung cấp một cơ chế layer-1 tiêu chuẩn để đại diện cho bất
     kỳ loại tài sản nào trên blockchain Algorand. Điều này có thể bao
     gồm:
@@ -42,8 +32,7 @@ Algorand unique:
     -   Hỗ trợ tích hợp native với Native Tokens
     -   Configurable Options
 
-# Atomic Transfers
-
+## Atomic Transfers
 -   Atomic Transfer cho phép các giao dịch an toàn và đồng thời cho
     nhiều tài sản trong một lúc giữa nhiều bên tham gia
 -   Tất cả được thực hiện như một giao dịch duy nhất.
@@ -52,15 +41,12 @@ Algorand unique:
     công hoặc không có gì được thực hiện.
 
 # Boxes
-
 ## Smart Contract Storage
-
 -   Local storage
 -   Global storage
 -   Box storage.
 
 ## Lợi ích
-
 -   Cho phép hợp đồng thông minh khả năng lưu trữ dữ liệu không giới
     hạn.
 -   Boxes giải quyết những vấn đề này bằng cách cung cấp cho mỗi hợp

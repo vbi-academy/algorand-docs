@@ -1,0 +1,55 @@
+- [[#market][Market]]
+- [[#decentralized-finance--stablecoins][Decentralized Finance & StableCoins]]
+  - [[#borrowing--lending][Borrowing & Lending]]
+  - [[#decentralized-exchanges--dexs-][Decentralized Exchanges ( DEXs )]]
+  - [[#stable-coins][Stable Coins]]
+  - [[#liquid-governance][Liquid Governance]]
+- [[#art--music-nfts][ART & Music NFTs]]
+- [[#gaming][Gaming]]
+- [[#bridges--oracles][Bridges & Oracles]]
+- [[#infrastructure][Infrastructure]]
+
+* Market
++ Date: 19/06/2024
++ Market Cap: $1,134,632,771
++ Volume (24h): $61,876,718
++ Circulating Supply: 8,181,444,560 ALGO
+* Decentralized Finance & StableCoins
+** Borrowing & Lending
+Các nền tảng vay và cho vay cho phép người dùng cho vay và vay mượn tất cả các loại tài sản trên Algorand. Cho dù đó là vay mượn Algo gốc hoặc ASA, người dùng có thể tham gia vào môi trường cho vay không cần sự tham gia của bên thứ ba.
++ [[https://folks.finance/][Folks Finance]] - Lend, borrow, trade and manage digital assets all in one platform ( Total Value Locked - $85M)
+** Decentralized Exchanges ( DEXs )
+Người dùng có thể tự cung cấp thanh khoản được sử dụng cho việc giao dịch hoặc trao đổi các ASAs số yêu thích và stablecoins của họ. Quan trọng nhất, người dùng có thể giao dịch tài sản của mình mà không cần bất kỳ trung gian nào để hỗ trợ giao dịch.
+
++ [[https://algorai.finance/][Algorai]]
++ [[https://app.compx.io/farms][Compx]]
++ [[https://tinyman.org/][Tinyman]]
++ [[https://app.humble.sh/pool][HumbleSwap]]
+** Stable Coins
+Stablecoins là tài sản số được thiết kế để duy trì giá trị ổn định, thường được liên kết với một loại tiền tệ fiat hoặc một hàng hoá để dùng trong giao dịch và kế toán. Trong thực tế, stablecoins được sử dụng cho thanh toán xuyên biên giới và hoạt động như cơ sở hạ tầng ngân hàng cho những người không có quyền truy cập, ngày càng phổ biến trên toàn cầu.
++ [[https://algomint.io/][Algomit GOUSD]]
++ [[https://quantoz.com/][Quantoz EURD]]
++ [[https://eurs.stasis.net/][Stasis EURS]]
++ [[https://www.xbacked.io/][xBacked]]
++ [[https://tether.to/en/][USDT]]
++ [[https://www.circle.com/blog/ushering-in-the-next-chapter-for-usdc][USDC]]
+** Liquid Governance
+Trong quá trình quản trị dòng tiền, các ứng dụng tài chính phi tập trung (DeFi) cung cấp các dịch vụ quản trị thay mặt cho người dùng cuối. Điều này có nghĩa là người dùng có thể đưa Algo của họ vào các ứng dụng này để tham gia vào việc quản trị. Qua đó, họ có thể đóng góp ý kiến hoặc bỏ phiếu về các quyết định quan trọng của nền tảng DeFi đó. Đồng thời, người dùng cũng có thể nhận được lợi tức từ việc tham gia quản trị này (governance yields), bên cạnh các lợi tức mà họ có thể nhận được từ các hoạt động DeFi khác như cho vay và cho vay lại tài sản. Quá trình này giúp tăng cường sự tham gia của cộng đồng và tính minh bạch trong quản lý và quyết định của các nền tảng DeFi.
++ [[https://messina.one/][Messina]]
++ [[https://folks.finance/][Folks Finance]]
+* ART & Music NFTs
++ [[https://book.io/][Book.io]]
++ [[https://www.randgallery.com/algo-collection][Rand Gallery]]
++ [[https://exa.market/][EXA Market]]
+* Gaming
++ https://www.aegirtactics.com/
++ https://x.com/alchemonnft
++ https://beta.cosmicchamps.com/
+* Bridges & Oracles
+Xây dựng hạ tầng cho Algorand và thiết lập một kết nối giữa off-chain và real-world data và các giải pháp tương tác ngoài chuỗi.
++ [[https://www.icon.foundation/][Icon]]
++ [[https://www.folksfeed.io/][Folks Feed Oracle]]
+* Infrastructure
+Xây dựng hạ tầng nền tảng cho Algorand, mở rộng hoặc tăng cường sức mạnh, tạo tools cho Algorand blockchain.
++ [[https://www.asastats.com/][ASA Stats]]
++ [[https://nodely.io/][Nodely]]

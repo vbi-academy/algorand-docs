@@ -1,0 +1,35 @@
+- [[#the-big-picture-of-algorand][The Big Picture of Algorand]]
+- [[#pure-proof-of-stake-ppos][Pure Proof-of-Stake (PPoS)]]
+- [[#algorand-standard-assets-asa][Algorand Standard Assets (ASA)]]
+- [[#atomic-transfers][Atomic Transfers]]
+- [[#boxes][Boxes]]
+
+** The Big Picture of Algorand
+Algorand is a blockchain platform that aims to deliver high performance, security, and decentralization. It was founded by Turing Award winner Silvio Micali. Here are the key technological features that make Algorand unique:
+
+** Pure Proof-of-Stake (PPoS)
++ Algorand sử dụng cơ chế đồng thuận Pure Proof-of-Stake (PPoS), cho phép đồng thuận nhanh chóng và hiệu quả mà không cần đào tiền tốn năng lượng. Trong PPoS:
+  + Validators (called Participation Nodes): được chọn ngẫu nhiên và tỷ lệ thuận với số tiền họ nắm giữ.
+  + Consensus Process: Mỗi khối được đề xuất bởi một ủy ban (committee) người dùng được chọn ngẫu nhiên, sau đó một ủy ban (committee) ngẫu nhiên khác bỏ phiếu để phê duyệt khối.
+  + Security: Quá trình lựa chọn ngẫu nhiên giúp chống lại các cuộc tấn công, vì người xác thực tiếp theo không thể đoán biết trước.
+** Algorand Standard Assets (ASA)
++ Algorand cung cấp một cơ chế layer-1 tiêu chuẩn để đại diện cho bất kỳ loại tài sản nào trên blockchain Algorand. Điều này có thể bao gồm:
+  + Fungible Token
+  + Non-Fungible Token
+  + Security Token
++ Đặc điểm của ASA
+  + Unified: Thống nhất
+  + Hỗ trợ tích hợp native với Native Tokens
+  + Configurable Options
+** Atomic Transfers
++ Atomic Transfer cho phép các giao dịch an toàn và đồng thời cho nhiều tài sản trong một lúc giữa nhiều bên tham gia
++ Tất cả được thực hiện như một giao dịch duy nhất.
++ Nếu bất kỳ phần nào của chuyển giao thất bại, toàn bộ giao dịch sẽ thất bại, đảm bảo rằng tất cả các hoạt động được hoàn thành thành công hoặc không có gì được thực hiện.
+** Boxes
+*** Smart Contract Storage
++ Local storage
++ Global storage
++ Box storage.
+*** Lợi ích
++ Cho phép hợp đồng thông minh khả năng lưu trữ dữ liệu không giới hạn.
++ Boxes giải quyết những vấn đề này bằng cách cung cấp cho mỗi hợp đồng thông minh khả năng tạo ra một số lượng "hộp" không giới hạn. Mỗi hộp có thể lưu trữ một lượng dữ liệu lớn và có thể được truy cập và quản lý độc lập.
