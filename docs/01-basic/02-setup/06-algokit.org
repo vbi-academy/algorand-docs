@@ -1,0 +1,194 @@
+* AlgoKit
+** AlgoKit CLI
+#+begin_src sh :results output :session share :async true
+algokit --help
+#+end_src
+
+#+begin_example
+Usage: algokit [OPTIONS] COMMAND [ARGS]...
+
+  AlgoKit is your one-stop shop to develop applications on the Algorand blockchain.
+
+  If you are getting started, please see the quick start tutorial: https://bit.ly/algokit-intro-tutorial.
+
+Options:
+  --version             Show the version and exit.
+  -v, --verbose         Enable logging of DEBUG messages to the console.
+  --color / --no-color  Force enable or disable of console output styling.
+  --skip-version-check  Skip version checking and prompting.
+  -h, --help            Show this message and exit.
+
+Commands:
+  compile      Compile smart contracts and smart signatures written in a supported high-level language to a format
+               deployable on the Algorand Virtual Machine (AVM).
+  completions  Install and Uninstall AlgoKit shell integrations.
+  config       Configure AlgoKit settings.
+  dispenser    Interact with the AlgoKit TestNet Dispenser.
+  doctor       Diagnose potential environment issues that may affect AlgoKit.
+  explore      Explore the specified network in the browser using Dappflow.
+  generate     Generate code for an Algorand project.
+  goal         Run the Algorand goal CLI against the AlgoKit LocalNet.
+  init         Initializes a new project from a template; run from project parent directory.
+  localnet     Manage the AlgoKit LocalNet.
+  project      Provides a suite of commands for managing your AlgoKit project.
+  task         Collection of useful tasks to help you develop on Algorand.
+#+end_example
+
+** Doctor
+#+begin_src sh :results output
+algokit doctor
+#+end_src
+
+#+RESULTS:
+#+begin_example
+timestamp: 2024-06-26T12:28:42+00:00
+AlgoKit: 2.1.3
+AlgoKit Python: 3.12.4 (main, Jun  6 2024, 18:26:44) [Clang 15.0.0 (clang-1500.3.9.4)] (location: /Users/dangeamon/.local/pipx/venvs/algokit)
+OS: macOS-14.5-arm64-arm-64bit
+docker: 26.0.0
+docker compose: 2.26.1-desktop.1
+git: 2.45.2
+python: Command not found!
+python3: 3.12.3 (location: /usr/local/bin/python3)
+pipx: 1.6.0
+poetry: 1.8.3
+node: 18.17.0
+npm: 10.7.0
+brew: 4.3.6
+
+If you are experiencing a problem with AlgoKit, feel free to submit an issue via:
+https://github.com/algorandfoundation/algokit-cli/issues/new
+Please include this output, if you want to populate this message in your clipboard, run `algokit doctor -c`
+#+end_example
+
+#+begin_example
+Usage: algokit doctor [OPTIONS]
+
+  Diagnose potential environment issues that may affect AlgoKit.
+
+  Will search the system for AlgoKit dependencies and show their versions, as
+  well as identifying any potential issues.
+
+Options:
+  -c, --copy-to-clipboard  Copy the contents of the doctor message (in
+                           Markdown format) in your clipboard.
+  -h, --help               Show this message and exit.
+#+end_example
+
+** Localnet
+#+begin_src sh :results output
+algokit localnet -h
+#+end_src
+
+#+begin_example
+Usage: algokit localnet [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  codespace  Manage the AlgoKit LocalNet in GitHub Codespaces.
+  config     Configure the container engine for AlgoKit LocalNet.
+  console    Run the Algorand goal CLI against the AlgoKit LocalNet via a Bash
+             console so you can execute multiple goal commands and/or interact
+             with a filesystem.
+  explore    Explore the AlgoKit LocalNet using lora.
+  logs       See the output of the Docker containers.
+  reset      Reset the AlgoKit LocalNet.
+  start      Start the AlgoKit LocalNet.
+  status     Check the status of the AlgoKit LocalNet.
+  stop       Stop the AlgoKit LocalNet.
+#+end_example
+
+#+begin_src sh :results output
+algokit localnet status
+#+end_src
+
+#+begin_example
+# container engine
+Name: docker (change with `algokit config container-engine`)
+# algod status
+Status: Running
+Port: 4001
+Last round: 0
+Time since last round: 0.0s
+Genesis ID: dockernet-v1
+Genesis hash: 5ensPvxqB3l/uJX0rsj4/Quc5xWqaUL59HhMQaAdr1E=
+Version: 3.25.0
+# conduit status
+Status: Running
+# indexer-db status
+Status: Running
+# indexer status
+Status: Running
+Port: 8980
+Last round: 0
+Version: 3.5.0
+# proxy status
+Status: Running
+#+end_example
+
+** Init Project
+#+begin_src sh :results output
+algokit init -h
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Usage: algokit init [OPTIONS]
+
+  Initializes a new project from a template, including prompting for template
+  specific questions to be used in template rendering.
+
+  Templates can be default templates shipped with AlgoKit, or custom templates
+  in public Git repositories.
+
+  Includes ability to initialise Git repository, run algokit project bootstrap
+  and automatically open Visual Studio Code.
+
+  This should be run in the parent directory that you want the project folder
+  created in.
+
+  By default, the `--workspace` flag creates projects within a workspace
+  structure or integrates them into an existing one, promoting organized
+  management of multiple projects. Alternatively, to disable this behavior use
+  the `--no-workspace` flag, which ensures the new project is created in a
+  standalone target directory. This is suitable for isolated projects or when
+  workspace integration is unnecessary.
+
+Options:
+  -n, --name TEXT                 Name of the project / directory / repository
+                                  to create.
+  -t, --template [tealscript|python|react|fullstack|beaker|base|playground]
+                                  Name of an official template to use. To
+                                  choose interactively, run this command with
+                                  no arguments.
+  --template-url URL              URL to a git repo with a custom project
+                                  template.
+  --template-url-ref URL          Specific tag, branch or commit to use on git
+                                  repo specified with --template-url. Defaults
+                                  to latest.
+  --UNSAFE-SECURITY-accept-template-url
+                                  Accept the specified template URL,
+                                  acknowledging the security implications of
+                                  arbitrary code execution trusting an
+                                  unofficial template.
+  --git / --no-git                Initialise git repository in directory after
+                                  creation.
+  --defaults                      Automatically choose default answers without
+                                  asking when creating this template.
+  --bootstrap / --no-bootstrap    Whether to run `algokit project bootstrap`
+                                  to install and configure the new project's
+                                  dependencies locally.
+  --ide / --no-ide                Whether to open an IDE for you if the IDE
+                                  and IDE config are detected. Supported IDEs:
+                                  VS Code.
+  --workspace / --no-workspace    Whether to prefer structuring standalone
+                                  projects as part of a workspace. An AlgoKit
+                                  workspace is a conventional project
+                                  structure that allows managing multiple
+                                  standalone projects in a monorepo.
+  -a, --answer <key> <value>      Answers key/value pairs to pass to the
+                                  template.
+  -h, --help                      Show this message and exit.
+#+end_example

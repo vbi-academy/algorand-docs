@@ -1,0 +1,28 @@
+* Javascript SDK
+https://developer.algorand.org/docs/sdks/javascript/#create-an-account
+
++ Initial Code & Use Typescript
+#+begin_src sh :results output
+npm init
+yarn init
+pnpm init
+bun init
+#+end_src
+
++ Add Package
+#+begin_src typescript
+npm install algosdk
+yarn add algosdk
+pnpm add algosdk
+bun add algosdk
+#+end_src
+
++ Run Code
+#+begin_src typescript
+import algosdk from 'algosdk';
+
+const generatedAccount = algosdk.generateAccount();
+const passphrase = algosdk.secretKeyToMnemonic(generatedAccount.sk);
+console.log(`My address: ${generatedAccount.addr}`);
+console.log(`My passphrase: ${passphrase}`);
+#+end_src

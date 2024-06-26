@@ -1,31 +1,35 @@
-  - [[#install-python-sdk][Install Python SDK]]
-  - [[#clone-sandbox-code][Clone Sandbox Code]]
-  - [[#start][Start]]
+-   [Install Python SDK](#install-python-sdk)
+-   [Clone Sandbox Code](#clone-sandbox-code)
+-   [Start](#start)
 
-** Install Python SDK
-#+begin_src sh :results output
+# Install Python SDK
+
+``` bash
 pip install py-algorand-sdk
 or
 pip3 install py-algorand-sdk
-#+end_src
+```
 
-+ Another Way
-#+begin_src sh :results output
+-   Another Way
+
+``` bash
 python3 -m pip install py-algorand-sdk
-#+end_src
+```
 
-** Clone Sandbox Code
-#+begin_src sh :results output
+# Clone Sandbox Code
+
+``` bash
 git clone https://github.com/algorand/sandbox.git
-#+end_src
+```
 
-#+begin_src sh :results output
+``` bash
 cd sandbox
 ./sandbox up testnet -v
-#+end_src
+```
 
-** Start
-#+begin_src python
+# Start
+
+``` python
 from algosdk import account, encoding
 
 # generate an account
@@ -38,8 +42,8 @@ if encoding.is_valid_address(address):
     print("The address is valid!")
 else:
     print("The address is invalid.")
-#+end_src
+```
 
-#+begin_src sh :results output
+``` bash
 python3 example.py
-#+end_src
+```
