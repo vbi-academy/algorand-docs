@@ -52,7 +52,9 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Development Tools & Extensions',
       items: [
-        'basic/tools/development-tools',
+        'basic/tools/python-sdk',
+        'basic/tools/javascrip-sdk',
+        'basic/tools/algokit',
       ],
     },
     {

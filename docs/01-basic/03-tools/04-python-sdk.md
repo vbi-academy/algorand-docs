@@ -1,3 +1,8 @@
+---
+id: python-sdk
+title: Python SDK
+---
+
 -   [Install Python SDK](#install-python-sdk)
 -   [Clone Sandbox Code](#clone-sandbox-code)
 -   [Start](#start)

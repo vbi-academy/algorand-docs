@@ -1,3 +1,7 @@
+---
+id: javascrip-sdk
+title: Javascript SDK
+---
 # Javascript SDK
 
 <https://developer.algorand.org/docs/sdks/javascript/#create-an-account>

@@ -1,3 +1,7 @@
+---
+id: algokit
+title: AlgoKit
+---
 # AlgoKit
 
 ## AlgoKit CLI
