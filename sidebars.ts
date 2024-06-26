@@ -53,7 +53,7 @@ const sidebars: SidebarsConfig = {
       label: 'Development Tools & Extensions',
       items: [
         'basic/tools/python-sdk',
-        'basic/tools/javascrip-sdk',
+        'basic/tools/javascript-sdk',
         'basic/tools/algokit',
       ],
     },

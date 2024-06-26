@@ -1,10 +1,8 @@
 ---
-id: javascrip-sdk
+id: javascript-sdk
 title: Javascript SDK
 ---
 # Javascript SDK
-
-<https://developer.algorand.org/docs/sdks/javascript/#create-an-account>
 
 -   Initial Code & Use Typescript
 
@@ -17,7 +15,7 @@ bun init
 
 -   Add Package
 
-``` typescript
+``` javascript
 npm install algosdk
 yarn add algosdk
 pnpm add algosdk
@@ -26,7 +24,7 @@ bun add algosdk
 
 -   Run Code
 
-``` typescript
+``` javascript
 import algosdk from 'algosdk';
 
 const generatedAccount = algosdk.generateAccount();
