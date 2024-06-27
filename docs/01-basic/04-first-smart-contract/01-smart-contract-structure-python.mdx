@@ -1,6 +1,19 @@
 ---
-id: smart-contract-structure-python
-title: Smart Contract Structure on Python
+id: smart-contract-smart-signature
+title: Smart Contract & Smart Signature on Python
 ---
 
 # Smart Contract Structure on Python
+
+| Tiêu chí                         | Smart Contract (Hợp đồng Thông minh)                   | Smart Signature (Chữ ký Thông minh)                     |
+|----------------------------------|--------------------------------------------------------|--------------------------------------------------------|
+| Định nghĩa                       | Chương trình tự động thực thi khi điều kiện được thỏa mãn | Chương trình xác thực giao dịch, chủ yếu để ủy quyền chữ ký |
+| Tên gọi trên Algorand            | Algorand Smart Contracts (ASC1)                        | LogicSig                                                |
+| Triển khai và Sử dụng            | Được triển khai dưới dạng ứng dụng với ID riêng, kích hoạt bởi giao dịch gọi ứng dụng | Logic được gửi kèm với mỗi giao dịch                   |
+| Trạng thái                       | Có thể thay đổi trạng thái toàn cầu và cục bộ           | Không có trạng thái riêng, phải gửi lại logic cho mỗi giao dịch |
+| Truy cập chuỗi                   | Truy cập số dư tài khoản, tham số cấu hình tài sản, thời gian khối | Chỉ có quyền truy cập vào một số biến toàn cục, không gian tạm thời, và các thuộc tính của giao dịch |
+| Giao dịch                        | Thực hiện giao dịch như là một phần của logic, bao gồm gọi ứng dụng khác | Chỉ xác thực và ký giao dịch, không thực hiện giao dịch |
+| Tài khoản ứng dụng               | Có tài khoản ứng dụng để giữ Algos hoặc ASAs            | Có thể tạo tài khoản hợp đồng hoạt động như ký quỹ, nhưng phải gửi lại logic |
+| API và ABI                       | Sử dụng ABI để tiêu chuẩn hóa việc mã hóa và giải mã dữ liệu | Không áp dụng API và ABI                               |
+| Chế độ sử dụng                   | Tạo dApps, quản lý tài sản, hợp đồng bảo đảm, bỏ phiếu, v.v. | Tài khoản hợp đồng hoặc ủy quyền tài khoản             |
+| Ứng dụng                         | Tạo ứng dụng phi tập trung (dApps), quản lý tài sản, vay và cho vay, bỏ phiếu, quản lý hợp đồng bảo đảm | Ủy quyền chữ ký, quản lý tài khoản đa chữ ký, giao dịch có điều kiện, ứng dụng tài chính phi tập trung (DeFi) |
