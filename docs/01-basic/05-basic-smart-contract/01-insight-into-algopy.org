@@ -1,5 +1,8 @@
 #+TITLE: Insight into algopy
 
+  - [[#what-is-algopy][What is AlgoPy]]
+  - [[#structure-of-a-contract][Structure of a contract]]
+
 ** What is AlgoPy
 + Algorand Python là một phiên bản của ngôn ngữ lập trình Python, được thiết kế để chạy trên Algorand Virtual Machine (AVM). Nó cung cấp một khung làm việc với kiểu dữ liệu tĩnh để phát triển các hợp đồng thông minh và chữ ký logic trên nền tảng Algorand, đồng thời mang lại giao diện giống Python cho các chức năng cơ bản của AVM. Điều này giúp bạn có thể sử dụng các công cụ tiêu chuẩn của Python.
 

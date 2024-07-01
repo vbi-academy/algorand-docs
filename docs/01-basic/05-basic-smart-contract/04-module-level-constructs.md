@@ -1,16 +1,11 @@
-#+TITLE: Module Level Constructs
+---
+author: Dang Quang Vu
+title: Module Level Constructs
+---
 
-  - [[#model-of-algopy][Model of AlgoPy]]
-  - [[#application][Application]]
-  - [[#asset][Asset]]
-  - [[#gtxn][gtxn]]
-  - [[#itxn][itxn]]
-  - [[#global][Global]]
-  - [[#txn][Txn]]
-  - [[#logicsig][LogicSig]]
+## Model of AlgoPy
 
-** Model of AlgoPy
-#+begin_src python
+``` python
 __all__ = [
     "ARC4Contract", # Base class for an Algorand Smart Contract
     "Account", # Base class for an Algorand Smart Contract
@@ -29,10 +24,11 @@ __all__ = [
     "uenumerate",
     "urange",
 ]
-#+end_src
+```
 
-** Application
-#+begin_src python
+## Application
+
+``` python
 class ApplicationFields(TypedDict, total=False):
     approval_program: algopy.Bytes
     clear_state_program: algopy.Bytes
@@ -43,10 +39,11 @@ class ApplicationFields(TypedDict, total=False):
     extra_program_pages: algopy.UInt64
     creator: algopy.Account
     address: algopy.Account
-#+end_src
+```
 
-** Asset
-#+begin_src python
+## Asset
+
+``` python
 class AssetFields(TypedDict, total=False):
     total: algopy.UInt64
     decimals: algopy.UInt64
@@ -60,10 +57,11 @@ class AssetFields(TypedDict, total=False):
     freeze: algopy.Account
     clawback: algopy.Account
     creator: algopy.Account
-#+end_src
+```
 
-** gtxn
-#+begin_src python
+## gtxn
+
+``` python
 __all__ = [
     "ApplicationCallFields",
     "ApplicationCallTransaction",
@@ -81,10 +79,11 @@ __all__ = [
     "Transaction",
     "TransactionBase",
 ]
-#+end_src
+```
 
-** itxn
-#+begin_src python
+## itxn
+
+``` python
 __all__ = [
     "ApplicationCall",
     "ApplicationCallInnerTransaction",
@@ -104,10 +103,11 @@ __all__ = [
     "_InnerTransactionsType",
     "submit_txns",
 ]
-#+end_src
+```
 
-** Global
-#+begin_src python
+## Global
+
+``` python
 class GlobalFields(TypedDict, total=False):
     min_txn_fee: algopy.UInt64
     min_balance: algopy.UInt64
@@ -127,10 +127,11 @@ class GlobalFields(TypedDict, total=False):
     asset_opt_in_min_balance: algopy.UInt64
     genesis_hash: algopy.Bytes
     opcode_budget: Callable[[], int]
-#+end_src
+```
 
-** Txn
-#+begin_src python
+## Txn
+
+``` python
 class TxnFields(TypedDict, total=False):
     sender: algopy.Account
     fee: algopy.UInt64
@@ -200,10 +201,11 @@ class TxnFields(TypedDict, total=False):
     logs: tuple[algopy.Bytes, ...]
     approval_program_pages: tuple[algopy.Bytes, ...]
     clear_state_program_pages: tuple[algopy.Bytes, ...]
-#+end_src
+```
 
-** LogicSig
-#+begin_src python
+## LogicSig
+
+``` python
 class LogicSig:
     """A logic signature"""
 
@@ -237,4 +239,4 @@ def logicsig(
         return decorator
     else:
         return decorator(sub)
-#+end_src
+```

@@ -1,0 +1,17 @@
+#+TITLE: Python Builtins
+
+** Usage
++ Compile Contract
+#+begin_src sh
+algokit compile py contract.py
+#+end_src
+
++ =Contract.approvoal.teal= & =Contract.clear.teal=
+#+begin_src sh
+alogkit compile py contract.py --output-arc32 --no-output-teal
+#+end_src
+
++ =Contract.arc32.json=
+#+begin_src sh
+algokit generate client Contract.are32.json --output client.py
+#+end_src
