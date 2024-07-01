@@ -11,7 +11,7 @@ pipx install algokit
 # Kiểm tra
 
 ``` bash
-algokit --verion
+algokit --version
 ```
 
 -   Kết quả trả về nếu đã cài đặt thành công
