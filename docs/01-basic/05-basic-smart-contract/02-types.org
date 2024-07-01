@@ -1,0 +1,23 @@
+#+TITLE: Types of AlgoPy
+#+AUTHOR: Dang Quang Vu
+#+EMAIL: jayden.dangvu@gmail.com
+
++ BigUInt - Int512
++ Bytes - underlying bytes value representing the []byte
++ String - Represents a UTF-8 encoded string backed by Bytes, accessible via .bytes. | underlying 'bytes' value representing the String
++ UInt64 -
+
+#+begin_src python
+__all__ = ["BigUInt", "Bytes", "String", "UInt64"]
+#+end_src
+
++ ByteBacked - Represents a type that is a single bytes value
++ Account - bytes
+
+#+begin_src python
+class Section(ARC4Contract):
+    def __init__(self) -> None:
+        self.auction = UInt64(0)
+        self.auction_title = String("hello")
+        self.digit = Bytes(b"0123456789")
+#+end_src

@@ -1,0 +1,128 @@
+#+TITLE: Module Level Constructs
+
+  - [[#model-of-algopy][Model of AlgoPy]]
+  - [[#application][Application]]
+  - [[#asset][Asset]]
+  - [[#gtxn][gtxn]]
+  - [[#itxn][itxn]]
+  - [[#global][Global]]
+
+** Model of AlgoPy
+#+begin_src python
+__all__ = [
+    "ARC4Contract", # Base class for an Algorand Smart Contract
+    "Account", # Base class for an Algorand Smart Contract
+    "Application",
+    "Asset",
+    "Block",
+    "Contract",
+    "Global",
+    "GTxn",
+    "ITxn",
+    "LogicSig",
+    "StateTotals",
+    "TemplateVar",
+    "Txn",
+    "logicsig",
+    "uenumerate",
+    "urange",
+]
+#+end_src
+
+** Application
+#+begin_src python
+class ApplicationFields(TypedDict, total=False):
+    approval_program: algopy.Bytes
+    clear_state_program: algopy.Bytes
+    global_num_uint: algopy.UInt64
+    global_num_bytes: algopy.UInt64
+    local_num_uint: algopy.UInt64
+    local_num_bytes: algopy.UInt64
+    extra_program_pages: algopy.UInt64
+    creator: algopy.Account
+    address: algopy.Account
+#+end_src
+
+** Asset
+#+begin_src python
+class AssetFields(TypedDict, total=False):
+    total: algopy.UInt64
+    decimals: algopy.UInt64
+    default_frozen: bool
+    unit_name: algopy.Bytes
+    name: algopy.Bytes
+    url: algopy.Bytes
+    metadata_hash: algopy.Bytes
+    manager: algopy.Account
+    reserve: algopy.Account
+    freeze: algopy.Account
+    clawback: algopy.Account
+    creator: algopy.Account
+#+end_src
+
+** gtxn
+#+begin_src python
+__all__ = [
+    "ApplicationCallFields",
+    "ApplicationCallTransaction",
+    "AssetConfigFields",
+    "AssetConfigTransaction",
+    "AssetFreezeFields",
+    "AssetFreezeTransaction",
+    "AssetTransferFields",
+    "AssetTransferTransaction",
+    "KeyRegistrationFields",
+    "KeyRegistrationTransaction",
+    "NULL_GTXN_GROUP_INDEX",
+    "PaymentFields",
+    "PaymentTransaction",
+    "Transaction",
+    "TransactionBase",
+]
+#+end_src
+
+** itxn
+#+begin_src python
+__all__ = [
+    "ApplicationCall",
+    "ApplicationCallInnerTransaction",
+    "AssetConfig",
+    "AssetConfigInnerTransaction",
+    "AssetFreeze",
+    "AssetFreezeInnerTransaction",
+    "AssetTransfer",
+    "AssetTransferInnerTransaction",
+    "InnerTransaction",
+    "InnerTransactionResult",
+    "KeyRegistration",
+    "KeyRegistrationInnerTransaction",
+    "Payment",
+    "PaymentInnerTransaction",
+    "_BaseInnerTransaction",
+    "_InnerTransactionsType",
+    "submit_txns",
+]
+#+end_src
+
+** Global
+#+begin_src python
+class GlobalFields(TypedDict, total=False):
+    min_txn_fee: algopy.UInt64
+    min_balance: algopy.UInt64
+    max_txn_life: algopy.UInt64
+    zero_address: algopy.Account
+    group_size: algopy.UInt64
+    logic_sig_version: algopy.UInt64
+    round: algopy.UInt64
+    latest_timestamp: algopy.UInt64
+    current_application_id: algopy.Application
+    creator_address: algopy.Account
+    current_application_address: algopy.Account
+    group_id: algopy.Bytes
+    caller_application_id: algopy.Application
+    caller_application_address: algopy.Account
+    asset_create_min_balance: algopy.UInt64
+    asset_opt_in_min_balance: algopy.UInt64
+    genesis_hash: algopy.Bytes
+    opcode_budget: Callable[[], int]
+#+end_src

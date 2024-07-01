@@ -1,0 +1,24 @@
+#+TITLE: Control Flow Structures
+
+#+begin_src python
+if true:
+    todo!()
+#+end_src
+
+#+begin_src python
+if true:
+    return todo!()
+#+end_src
+
+#+begin_src python
+if true:
+    return todo!()
+elif true:
+    return todo!()
+elif true:
+    return todo!()
+elif true:
+    return todo!()
+else:
+    return todo!()
+#+end_src

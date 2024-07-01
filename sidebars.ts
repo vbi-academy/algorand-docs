@@ -62,16 +62,13 @@ const sidebars: SidebarsConfig = {
       label: 'First Your Smart Contract',
       items: [
         'basic/first-smart-contract/smart-contract-smart-signature',
-        'basic/first-smart-contract/compile',
-        'basic/first-smart-contract/generate',
-        'basic/first-smart-contract/deploy-and-call-on-algorand',
       ],
     },
     {
       type: 'category',
       label: 'Basic Smart Contract',
       items: [
-        'basic/basic-smart-contract/insight-into-algokit',
+        'basic/basic-smart-contract/insight-into-algopy',
         'basic/basic-smart-contract/types',
         'basic/basic-smart-contract/control-flow-structures',
         'basic/basic-smart-contract/module-level-constructs',
