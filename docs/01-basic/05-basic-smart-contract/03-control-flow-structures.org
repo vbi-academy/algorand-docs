@@ -1,23 +1,27 @@
 #+TITLE: Control Flow Structures
 
 #+begin_src python
-if true:
+value = 10;
+
+if value == 10:
     todo!()
+... continue
 #+end_src
 
 #+begin_src python
-if true:
+if value == 10:
     return todo!()
+... continue
 #+end_src
 
 #+begin_src python
-if true:
+if value = 1:
     return todo!()
-elif true:
+elif value = 2:
     return todo!()
-elif true:
+elif value = 3:
     return todo!()
-elif true:
+elif value = 4:
     return todo!()
 else:
     return todo!()

@@ -15,13 +15,13 @@ ASSET_MIN_BALANCE = 100000
 
 class StructExample(arc4.Struct):
     fields_name: arc4.UInt64
+    fields_string: arc4.String
 
 class Auction(ARC4Contract):
     # Define Types or initialized value
-    values: UInt64
 
     def __init__(self) -> None:
-        todo!()
+        values: Uint64(0)
 
     @arc4.abimethod
     def function_name(self) -> Return_Type:

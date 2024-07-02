@@ -2,22 +2,50 @@
 #+AUTHOR: Dang Quang Vu
 #+EMAIL: jayden.dangvu@gmail.com
 
-+ BigUInt - Int512
 + Bytes - underlying bytes value representing the []byte
-+ String - Represents a UTF-8 encoded string backed by Bytes, accessible via .bytes. | underlying 'bytes' value representing the String
-+ UInt64 -
++ ByteBacked - Represents a type that is a single bytes value
++ Account - Bytes -> PublicKey
++ String - Represents a UTF-8 encoded string backed by Bytes, accessible via .bytes
++ BigUInt - Int512
++ UInt64
 
 #+begin_src python
 __all__ = ["BigUInt", "Bytes", "String", "UInt64"]
 #+end_src
 
-+ ByteBacked - Represents a type that is a single bytes value
-+ Account - bytes
+#+begin_src python
+__type__ = ["BoxMap", "Box", "BoxRef"]
+#+end_src
+
++ Box: Box abstracts the reading and writing of a single value to a single box. The box size will be reconfigured dynamically to fit the size of the value being assigned to it
+#+begin_src python
+class Box(typing.Generic[_TValue]):
+    def __init__(
+        self, type_: type[_TValue], /, *, key: bytes | str | Bytes | String = ...
+    ) -> None: ...
+#+end_src
++ BoxMap: BoxMap abstracts the reading and writing of a set of boxes using a common key and content type. Each composite key (prefix + key) still needs to be made available to the application via the `boxes` property of the Transaction.
+#+begin_src python
+class BoxMap(typing.Generic[_TKey, _TValue]):
+    def __init__(
+        self,
+        key_type: type[_TKey],
+        value_type: type[_TValue],
+        /,
+        *,
+        key_prefix: bytes | str | Bytes | String = ...,
+    ) -> None: ...
+#+end_src
++ BoxRef: BoxRef abstracts the reading and writing of boxes containing raw binary data. The size is configured manually, and can be set to values larger than what the AVM can handle in a single value.
+#+begin_src python
+class BoxRef:
+    def __init__(self, /, *, key: bytes | str | Bytes | String = ...) -> None: ...
+#+end_src
 
 #+begin_src python
 class Section(ARC4Contract):
     def __init__(self) -> None:
-        self.auction = UInt64(0)
+        self.auction = UInt64(1000)
         self.auction_title = String("hello")
         self.digit = Bytes(b"0123456789")
 #+end_src
